@@ -42,6 +42,8 @@ public class A6Mail126GetValidation {
 			
 			//获取当前用户名
 			String s=driver.findElement(By.id("spnUid")).getText();
+			String d=driver.findElement(By.className("nui-ipt-input")).getAttribute("type");
+			String m=driver.findElement(By.className("nui-ipt-input")).getAttribute("aria-label");
 			System.out.println("登录账户是："+s);
 			
 			

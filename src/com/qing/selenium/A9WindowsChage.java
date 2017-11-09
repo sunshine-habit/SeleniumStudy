@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import java.util.*;
 
-public class A9FrameChage {
+public class A9WindowsChage {
 
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
