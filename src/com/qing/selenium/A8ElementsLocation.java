@@ -18,7 +18,7 @@ public class A8ElementsLocation {
 		System.setProperty("webdriver.chrome.driver", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chromedriver.exe");
 		WebDriver driver= new ChromeDriver();
 		//String url="http://127.0.0.1:8020/gitHub_helloworld/HTMLCSS/Day3/leesson/form.html";
-		File file = new File( "E:/gitHub_helloworld/HTMLCSS/Day3/leesson/form.html");
+		File file = new File( "E:/GIT/HtmlCssStudy/Day3/leesson/form.html");
 		String url = file.getAbsolutePath();
 		//下面的方法也可以用，本地路径就用上面的吧
 		//String url ="E:/gitHub_helloworld/HTMLCSS/Day3/leesson/form.html";
