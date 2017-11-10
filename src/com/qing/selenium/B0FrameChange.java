@@ -33,7 +33,8 @@ public class B0FrameChange {
 		driver.switchTo().frame("right");
 		driver.findElement(By.id("kw")).sendKeys("你跳到右侧iframe框输入查询内容了");
 		
-
+		driver.close();
+		System.out.println("game over~ again!");
 	}
 
 }

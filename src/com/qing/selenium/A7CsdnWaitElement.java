@@ -30,7 +30,9 @@ public class A7CsdnWaitElement {
 			//
 			driver.findElement(By.id("username")).sendKeys("liuyaqing1988@126.com");
 			driver.findElement(By.id("password")).clear();
-			driver.findElement(By.id("password")).sendKeys("liuyaqing1020");
+			
+			System.out.println("请输入正确的密码");
+			driver.findElement(By.id("password")).sendKeys("liuyaqing****");
 		
 			driver.findElement(By.className(	"logging")).click();
 			
