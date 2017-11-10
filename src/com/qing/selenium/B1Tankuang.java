@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.interactions.Actions;
 import java.io.File;
 
 public class B1Tankuang {
@@ -12,9 +13,12 @@ public class B1Tankuang {
 		System.out.println("警告框处理");
 		System.setProperty("webdriver.chrome.driver", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
+		/*
+		 //注释里面的内容是本地测试用的哈
 		File file = new File("E:/GIT/JavaScriptStudy/tankuang.html");
 		String filePath =file.getAbsolutePath();
 		driver.get(filePath);
+		
 		
 		//ALERT弹框测试
 		driver.findElement(By.linkText("alert弹框")).click();
@@ -56,10 +60,29 @@ public class B1Tankuang {
 		prompt.accept();
 		//告诉你答案是否正确
 		Thread.sleep(2000);
-		prompt.accept();
+		prompt.accept();		
 		
+		*/
+		
+		System.out.println("再来一个例子吧");
+		driver.get("https://www.baidu.com/");
+		Actions action = new Actions(driver);
+		action.clickAndHold(driver.findElement(By.linkText("设置"))).perform();
+		driver.findElement(By.className("setpref")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.className("prefpanelgo")).click();
+		
+		//警告框
+		Alert alert = driver.switchTo().alert();
+		String alertBaidu = alert.getText();
+		//记住快捷键 syso ALT+回车
+		System.out.println("弹框内容是："+alertBaidu);
+		Thread.sleep(2000);
+		alert.accept();
+		
+
+		Thread.sleep(2000);
 		driver.close();
-		
 		System.out.println("game over~ again!");
 	}
 
