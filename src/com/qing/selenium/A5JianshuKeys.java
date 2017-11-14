@@ -41,9 +41,11 @@ public class A5JianshuKeys {
 		input.sendKeys(Keys.ENTER);
 		
 		Thread.sleep(3000);
+		//关闭当前页面
 		driver.close();
 		
 		//想想怎么解决两个页面都关闭的
+		driver.quit();
 		
 		
 		System.out.println("game over~ again!");

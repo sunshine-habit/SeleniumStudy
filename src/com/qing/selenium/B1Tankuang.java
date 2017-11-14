@@ -13,7 +13,7 @@ public class B1Tankuang {
 		System.out.println("警告框处理");
 		System.setProperty("webdriver.chrome.driver", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-		/*
+		
 		 //注释里面的内容是本地测试用的哈
 		File file = new File("E:/GIT/JavaScriptStudy/tankuang.html");
 		String filePath =file.getAbsolutePath();
@@ -62,7 +62,7 @@ public class B1Tankuang {
 		Thread.sleep(2000);
 		prompt.accept();		
 		
-		*/
+		/*
 		
 		System.out.println("再来一个例子吧");
 		driver.get("https://www.baidu.com/");
@@ -82,7 +82,7 @@ public class B1Tankuang {
 		
 
 		Thread.sleep(2000);
-		driver.close();
+		driver.close();*/
 		System.out.println("game over~ again!");
 	}
 
