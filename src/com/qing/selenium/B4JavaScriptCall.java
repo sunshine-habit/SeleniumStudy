@@ -1,8 +1,5 @@
 package com.qing.selenium;
 import org.openqa.selenium.chrome.*;
-
-import com.gargoylesoftware.htmlunit.javascript.configuration.JavaScriptConfiguration;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
