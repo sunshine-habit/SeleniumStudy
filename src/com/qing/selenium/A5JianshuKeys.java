@@ -14,7 +14,7 @@ public class A5JianshuKeys {
 		// TODO Auto-generated method stub
 		System.out.print("现在开始登录简书网~");
 		System.out.print("键盘事件~");
-		System.setProperty("webdriver.chrome.driver", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\liu_y\\AppData\\Local\\Google\\Chrome\\Application\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		//System.setProperty("webdriver.firefox.bin","E:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe");
 		//WebDriver driver2 = new FirefoxDriver();

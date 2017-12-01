@@ -18,7 +18,7 @@ public class A4BaiduPanMouse {
 		// TODO Auto-generated method stub
 			System.out.println("Êó±êÊÂ¼þ");
 			
-			System.setProperty("webdriver.chrome.driver", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\liu_y\\AppData\\Local\\Google\\Chrome\\Application\\chromedriver.exe");
 			WebDriver driver = new ChromeDriver();
 			//iE************************
 			/*System.setProperty("webdriver.ie.driver","C:\\Program Files\\Internet Explorer\\IEDriverServer.exe");
@@ -33,8 +33,9 @@ public class A4BaiduPanMouse {
 		    driver.get("http://pan.baidu.com");
 			Actions action = new Actions(driver);
 			
-			driver.manage().window().setSize(new Dimension(1200,800));
-			
+//			Dimension dimension = new Dimension(1200, 800);
+//			driver.manage().window().setSize(dimension);
+			driver.manage().window().setSize(new Dimension(1200,	800));
 			action.doubleClick(driver.findElement(By.className("account-title"))).perform();
 
 			//driver.findElement(By.className("account-title")).click();

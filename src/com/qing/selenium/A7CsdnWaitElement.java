@@ -4,6 +4,8 @@ import org.openqa.selenium.firefox.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.Dimension;
+
+import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
 
@@ -11,19 +13,19 @@ public class A7CsdnWaitElement {
 		public static void main(String[]  args) throws InterruptedException{
 			System.out.print("****************设置元素等待，这个有问题哦************");
 			
-			System.setProperty("webdriver.chrome.driver", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\liu_y\\AppData\\Local\\Google\\Chrome\\Application\\chromedriver.exe");
 			WebDriver driver = new ChromeDriver();
 			
 			driver.get("https://passport.csdn.net/account/login?from=http://my.csdn.net/my/mycsdn");
 			driver.manage().window().setSize(new Dimension(1300,900));
 		
-			//页面加载超时时间设置为3s
+			//页面加载超时时间设置为3s（不建议使用，隐性等待）
 			driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 			
-			//定位对象时给10s 的时间, 如果10s 内还定位不到则抛出异常
+			//定位对象时给10s 的时间, 如果10s 内还定位不到则抛出异常（不建议使用，隐性等待）
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-			//异步脚本的超时时间设置成3s
+			//异步脚本的超时时间设置成3s（不建议使用，隐性等待）
 			driver.manage().timeouts().setScriptTimeout(10, TimeUnit.SECONDS);
 			
 			driver.findElement(By.id("username")).clear();
@@ -31,8 +33,11 @@ public class A7CsdnWaitElement {
 			driver.findElement(By.id("username")).sendKeys("liuyaqing1988@126.com");
 			driver.findElement(By.id("password")).clear();
 			
+			
 			System.out.println("请输入正确的密码");
-			driver.findElement(By.id("password")).sendKeys("liuyaqing****");
+			Scanner scanner = new Scanner(System.in);
+			String pwd = scanner.nextLine();
+			driver.findElement(By.id("password")).sendKeys(pwd);
 		
 			driver.findElement(By.className(	"logging")).click();
 			
@@ -61,6 +66,7 @@ public class A7CsdnWaitElement {
 		//重要在这个地方要把百度这个浏览器关掉，否岀报错
 		System.out.println("如果百度出来了，那么就关掉吧，要不然报错哦，还没学习切换窗口呢");
 		try{
+			//强制等待，不建议使用
 			Thread.sleep(3000);
 		}catch(InterruptedException e){
 			e.printStackTrace();

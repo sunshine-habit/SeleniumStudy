@@ -13,7 +13,7 @@ public class B0FrameChange {
 		// TODO Auto-generated method stub
 		
 		System.out.println("多表单切换");
-		System.setProperty("webdriver.chrome.driver", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\liu_y\\AppData\\Local\\Google\\Chrome\\Application\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 
 		File file = new File("E:/GIT/HtmlCssStudy/Day2/lesson/frameset.html");
@@ -32,7 +32,7 @@ public class B0FrameChange {
 		//定位到右侧frame框中
 		driver.switchTo().frame("right");
 		driver.findElement(By.id("kw")).sendKeys("你跳到右侧iframe框输入查询内容了");
-		
+		Thread.sleep(2000);
 		driver.close();
 		System.out.println("game over~ again!");
 	}

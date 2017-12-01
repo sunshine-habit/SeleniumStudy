@@ -12,7 +12,7 @@ public class B4JavaScriptCall {
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		System.out.println("JavaScriptµ÷ÓÃ");
-		System.setProperty("webdriver.chrome.driver", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\liu_y\\AppData\\Local\\Google\\Chrome\\Application\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().setSize(new Dimension(700, 600));
 		driver.get("http://www.baidu.com");

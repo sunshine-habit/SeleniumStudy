@@ -13,7 +13,7 @@ public class A6Mail126GetValidation {
 		// TODO Auto-generated method stub
 			System.out.print("****************获得验证信息****************");
 			
-			System.setProperty("webdriver.chrome.driver", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\liu_y\\AppData\\Local\\Google\\Chrome\\Application\\chromedriver.exe");
 			WebDriver driver = new ChromeDriver();
 			driver.manage().window().setSize(new Dimension(1480,800));
 			

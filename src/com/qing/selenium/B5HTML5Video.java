@@ -12,7 +12,7 @@ public class B5HTML5Video {
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		System.out.println("处理HTML5 的视频播放，好吧，这个执行失败，没有找到原因。。。后面研究");
-		System.setProperty("webdriver.chrome.driver", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\liu_y\\AppData\\Local\\Google\\Chrome\\Application\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://videojs.com/");
 		

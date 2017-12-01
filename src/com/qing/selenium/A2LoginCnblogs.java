@@ -22,7 +22,7 @@ public class A2LoginCnblogs {
 		driver.close();*/
 		
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\liu_y\\AppData\\Local\\Google\\Chrome\\Application\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		//ÐÞ¸Ää¯ÀÀÆ÷³ß´ç
 		driver.manage().window().setSize(new Dimension(1480,800));

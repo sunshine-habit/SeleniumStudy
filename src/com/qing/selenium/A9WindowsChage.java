@@ -13,14 +13,14 @@ public class A9WindowsChage {
 			System.out.println("多窗口切换");
 			
 			//打开浏览器
-			System.setProperty("webdriver.chrome.driver", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\liu_y\\AppData\\Local\\Google\\Chrome\\Application\\chromedriver.exe");
 			WebDriver driver= new ChromeDriver();
 			driver.get("http://www.baidu.com");
 			//获得当前窗口句柄
 			String baidu_handle = driver.getWindowHandle();
 			System.out.println("当前窗口句柄是："+baidu_handle);
 			driver.findElement(By.linkText("登录")).click();
-			Thread.sleep(3000);
+			Thread.sleep(5000);
 			driver.findElement(By.className("pass-reglink")).click();
 			
 			//获得所有窗口句柄

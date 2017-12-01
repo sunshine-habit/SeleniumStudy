@@ -11,7 +11,7 @@ public class A3YoudaoSubmit {
 		System.out.println("简单元素操作~");
 		System.out.println("打开有道网站~");
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\liu_y\\AppData\\Local\\Google\\Chrome\\Application\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://www.youdao.com/");
 		

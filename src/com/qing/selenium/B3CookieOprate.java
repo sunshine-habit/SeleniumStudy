@@ -14,7 +14,7 @@ public class B3CookieOprate {
 	public static void main(String[] args) throws InterruptedException {
 		System.out.println("²Ù×÷Cookie");
 		//´ò¿ªä¯ÀÀÆ÷
-		System.setProperty("webdriver.chrome.driver", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\liu_y\\AppData\\Local\\Google\\Chrome\\Application\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://126.com/");
 		Thread.sleep(1000);

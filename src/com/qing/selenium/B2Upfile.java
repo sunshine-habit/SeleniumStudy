@@ -15,7 +15,7 @@ public class B2Upfile {
 		// TODO Auto-generated method stub
 					System.out.println("上传文件");
 					
-					System.setProperty("webdriver.chrome.driver", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chromedriver.exe");
+					System.setProperty("webdriver.chrome.driver", "C:\\Users\\liu_y\\AppData\\Local\\Google\\Chrome\\Application\\chromedriver.exe");
 					WebDriver driver = new ChromeDriver();
 
 					driver.get("http://pan.baidu.com");

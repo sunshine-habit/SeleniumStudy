@@ -15,7 +15,7 @@ public class A8ElementsLocation {
 		System.out.println("***********定位一组元素***********");
 		System.out.println("*******要么打开Hbuilder*********");
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\liu_y\\AppData\\Local\\Google\\Chrome\\Application\\chromedriver.exe");
 		WebDriver driver= new ChromeDriver();
 		//String url="http://127.0.0.1:8020/gitHub_helloworld/HTMLCSS/Day3/leesson/form.html";
 		File file = new File( "E:/GIT/HtmlCssStudy/Day3/leesson/form.html");
